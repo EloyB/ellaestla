@@ -132,6 +132,7 @@ export default function Home() {
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
+            onClick={() => router.push("/ontbijtboxen")}
           >
             <div className="absolute group inset-0 bg-primary bg-opacity-40 flex flex-col justify-center items-center p-8 text-justify">
               <p className="text-lg text-secondary">Ontbijtboxen</p>
@@ -151,7 +152,7 @@ export default function Home() {
           </div> */}
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-5 py-20 xl:px-0">
+      <div className="max-w-screen-xl mx-auto px-5 pt-20 pb-10 xl:px-0">
         <div className="bg-secondary p-10 space-y-10 sm:flex sm:space-y-0 sm:space-x-5 md:space-x-8">
           <div className="text-primary space-y-3 sm:w-1/2">
             <h1 className="text-3xl">Heb je vragen of wil je reserveren?</h1>

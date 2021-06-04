@@ -10,10 +10,10 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      if (window.scrollY >= screen.height) {
         setHitScrollPoint(true);
       } else {
-        setHitScrollPoint(true);
+        setHitScrollPoint(false);
         setOpenMenu(false);
       }
     };
@@ -22,12 +22,19 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed md:absolute z-50 w-full bg-secondary p-8 ${
+      className={`fixed lg:absolute z-50 w-full transition-colors ${
+        hitScrollPoint ? "bg-secondary md:w-full" : "bg-transparent md:w-1/2"
+      } bg-transparent p-8 ${
         openMenu ? "shadow-lg" : "shadow-none"
-      } md:w-1/2 md:right-0 md:top-0 lg:shadow-none xl:px-14 xl:py-10`}
+      } md:right-0 md:top-0 lg:shadow-none xl:px-14 xl:py-10`}
     >
       <div className={`max-w-screen-xl m-auto lg:flex lg:items-center`}>
-        <div className={`flex justify-end`}>
+        <div className={`flex ${hitScrollPoint ? "justify-between" : "justify-end"} `}>
+          <img
+            className={`w-14 h-auto ${hitScrollPoint ? "block" : "hidden"}`}
+            src="/logo.png"
+            alt="logo"
+          />
           <div className={`cursor-pointer lg:hidden`} onClick={() => setOpenMenu(!openMenu)}>
             <CgMenuRight className="text-primary w-8 h-8" />
           </div>
