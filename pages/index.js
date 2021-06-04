@@ -66,7 +66,7 @@ export default function Home() {
               </p>
             </div>
             <img
-              className="transform translate-y-10 sm:max-w-sm sm:w-1/2 sm:translate-y-20 object-contain"
+              className="transform h-auto translate-y-10 sm:max-w-sm sm:w-1/2 sm:translate-y-20 object-contain"
               src="/ella2.png"
               alt=""
             />
@@ -115,7 +115,7 @@ export default function Home() {
             style={{
               backgroundImage: "url(/dinee.jpeg)",
               backgroundPosition: "center",
-              backgroundSize: "contain",
+              backgroundSize: "cover",
             }}
             onClick={() => router.push("/dineevoortwee")}
           >
@@ -128,7 +128,7 @@ export default function Home() {
             style={{
               backgroundImage: "url(/demo1.jpg)",
               backgroundPosition: "center",
-              backgroundSize: "contain",
+              backgroundSize: "cover",
             }}
           >
             <div className="absolute group inset-0 bg-primary bg-opacity-40 flex flex-col justify-center items-center p-8 text-justify">
