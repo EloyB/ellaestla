@@ -28,11 +28,10 @@ export default function Home() {
         <div className="max-w-screen-lg mr-auto">
           <div className="w-full bg-transparent md:bg-secondary px-8 pt-8 sm:flex sm:flex-row-reverse sm:justify-between sm:py-8">
             <div className="space-y-5 sm:w-1/2 sm:pl-8">
-              <div className="flex flex-col space-y-3">
-                <h1 className="text-primary text-3xl md:text-4xl">Qui est Ella?</h1>
+              <div className="flex flex-col space-y-3 items-center">
+                <h1 className="text-primary text-3xl text-center md:text-4xl">Qui est Ella?</h1>
                 <div className="w-20 border-t-2 border-secondary md:hidden"></div>
               </div>
-              {/* <h1 className="text-primary text-3xl lg:text-5xl">Qui est Ella?</h1> */}
               <p className="text-primary lg:text-lg text-justify">
                 Piep! Ik ben Ella, 23 jaar en foodlover in hart en nieren. Door de week ga ik door
                 het leven als een rechtenstudent, in de weekends sta ik klaar om jou en je
@@ -42,7 +41,7 @@ export default function Home() {
               </p>
             </div>
             <img
-              className="transform  sm:max-w-sm sm:w-1/2 sm:translate-y-20"
+              className="transform translate-y-10 sm:max-w-sm sm:w-1/2 sm:translate-y-20"
               src="/ella2.png"
               alt=""
             />
@@ -55,18 +54,21 @@ export default function Home() {
           Laat je zintuigen verrassen en geniet van een totaalbeleving
         </p>
       </div>
-      <div id="name" className="py-20 px-5 max-w-screen-xl mx-auto xl:px-0">
+      <div id="name" className="pt-20 px-5 max-w-screen-xl mx-auto xl:px-0">
         <div className="max-w-screen-lg ml-auto">
-          <div className="w-full bg-secondary px-8 pb-8 sm:flex sm:flex-row-reverse sm:justify-between sm:py-8">
+          <div className="w-full bg-transparent md:bg-secondary px-8 pb-8 sm:flex sm:flex-row-reverse sm:justify-between sm:py-8">
             <img
               className="transform -translate-y-10 sm:max-w-sm sm:w-1/2 sm:-translate-y-20"
               src="/concepts.jpeg"
               alt=""
             />
             <div className="space-y-5 sm:w-1/2 sm:pr-8">
-              <h1 className="text-primary text-3xl lg:text-5xl">
-                Food concepts: what’s in the name?
-              </h1>
+              <div className="flex flex-col space-y-3 items-center">
+                <h1 className="text-primary text-3xl text-center md:text-4xl">
+                  Food concepts: what’s in the name?
+                </h1>
+                <div className="w-20 border-t-2 border-secondary md:hidden"></div>
+              </div>
               <p className="text-primary lg:text-lg text-justify">
                 Ella est là werkt verschillende formules uit waarbij ‘food’ steeds de hoofdrol
                 speelt. Maar het is meer dan dat! <br /> Elk food concept staat voor een
@@ -91,14 +93,7 @@ export default function Home() {
               backgroundSize: "cover",
             }}
           >
-            <div className="absolute group inset-0 bg-secondary bg-opacity-40 hover:bg-opacity-100 flex flex-col justify-center items-center p-8 text-justify">
-              <p className="text-secondary text-lg group-hover:text-primary">DINEE VOOR TWEE</p>
-              <p className="hidden group-hover:block">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt
-                voluptate tempore quaerat quas amet ut asperiores voluptatibus hic sapiente. Aut
-                animi minus quod ad repudiandae consectetur architecto, quam suscipit.
-              </p>
-            </div>
+            <div className="absolute group inset-0 bg-secondary bg-opacity-0 hover:bg-opacity-40 flex flex-col justify-center items-center p-8 text-justify"></div>
           </div>
           <div
             className="w-full h-60 lg:h-80 bg-red-50"
