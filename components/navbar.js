@@ -47,7 +47,7 @@ export default function Navbar() {
           <div>
             <Link href="/#name">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
-                What's in the name
+                What's in the name?
               </a>
             </Link>
           </div>
