@@ -66,7 +66,8 @@ export default function Home() {
               </p>
             </div>
             <img
-              className="transform h-auto translate-y-10 sm:max-w-sm sm:w-1/2 sm:translate-y-20 object-contain"
+              className="transform translate-y-10 sm:max-w-sm sm:w-1/2 sm:translate-y-20 object-contain"
+              style={{ height: "550px" }}
               src="/ella2.png"
               alt=""
             />
@@ -84,6 +85,7 @@ export default function Home() {
           <div className="w-full bg-transparent md:bg-secondary px-8 pb-8 sm:flex sm:flex-row-reverse sm:justify-between sm:py-8">
             <img
               className="transform -translate-y-10 sm:max-w-sm sm:w-1/2 sm:-translate-y-20 object-contain"
+              style={{ height: "550px" }}
               src="/concepts.jpeg"
               alt=""
             />
