@@ -22,7 +22,14 @@ export default function Home() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(mailData),
-    }).then((e) => console.log(e));
+    }).then((e) =>
+      setMailData({
+        email: "",
+        naam: "",
+        telefoon: "",
+        bericht: "",
+      })
+    );
   };
   return (
     <div>
@@ -164,23 +171,27 @@ export default function Home() {
               placeholder="Email"
               type="text"
               onChange={(e) => setMailData({ ...mailData, email: e.target.value })}
+              value={mailData.email}
             />
             <input
               className="w-full bg-transparent py-3 px-2 border-b-2 border-primary placeholder-primary focus:outline-none text-primary"
               placeholder="Naam"
               type="text"
               onChange={(e) => setMailData({ ...mailData, naam: e.target.value })}
+              value={mailData.naam}
             />
             <input
               className="w-full bg-transparent py-3 px-2 border-b-2 border-primary placeholder-primary focus:outline-none text-primary"
               placeholder="Telefoon"
               type="text"
               onChange={(e) => setMailData({ ...mailData, telefoon: e.target.value })}
+              value={mailData.telefoon}
             />
             <textarea
               className="w-full bg-transparent py-3 px-2 border-b-2 border-primary placeholder-primary resize-none focus:outline-none text-primary"
               placeholder="Bericht"
               onChange={(e) => setMailData({ ...mailData, bericht: e.target.value })}
+              value={mailData.bericht}
             ></textarea>
             <div className="cursor-pointer" onClick={sendEmail}>
               <p className="pt-5 text-primary text-lg">Verstuur</p>
