@@ -60,7 +60,7 @@ export default function Home() {
             <div className="space-y-5 sm:w-1/2 sm:pl-8">
               <div className="flex flex-col space-y-3 items-center md:items-start">
                 <h1 className="text-primary text-3xl text-center md:text-left md:text-4xl">
-                  Qui est Ella?
+                  About me
                 </h1>
                 <div className="w-20 border-t-2 border-secondary md:hidden"></div>
               </div>

@@ -47,7 +47,7 @@ export default function Navbar() {
           <div>
             <Link href="/#qui">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
-                Qui est Ella?
+                About me
               </a>
             </Link>
           </div>
