@@ -159,7 +159,7 @@ export default function Home() {
           </div> */}
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-5 pt-20 pb-10 xl:px-0">
+      <div id="contact" className="max-w-screen-xl mx-auto px-5 pt-20 pb-10 xl:px-0">
         <div className="bg-secondary p-10 space-y-10 sm:flex sm:space-y-0 sm:space-x-5 md:space-x-8">
           <div className="text-primary space-y-3 sm:w-1/2">
             <h1 className="text-3xl">Heb je vragen of wil je reserveren?</h1>
