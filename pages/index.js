@@ -135,7 +135,7 @@ export default function Home() {
           <div
             className="group relative w-full h-60 lg:h-80 cursor-pointer"
             style={{
-              backgroundImage: "url(/demo1.jpg)",
+              backgroundImage: "url(/obcover.jpeg)",
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}

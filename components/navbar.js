@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className={`max-w-screen-xl m-auto lg:flex lg:items-center`}>
         <div className={`flex ${hitScrollPoint ? "justify-between" : "justify-end"} `}>
           <img
-            className={`w-14 h-auto ${hitScrollPoint ? "block" : "hidden"} lg:hidden`}
+            className={`w-14 h-9 object-contain ${hitScrollPoint ? "block" : "hidden"} lg:hidden`}
             src="/logo.png"
             alt="logo"
           />
