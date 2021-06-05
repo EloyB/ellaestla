@@ -20,11 +20,12 @@ export default (req, res) => {
     req.body.naam +
     "<br/><br/> Bericht: " +
     req.body.bericht;
-  transporter.sendMail({
-    from: "info@ella-est-la.be",
-    to: "info@ella-est-la.be",
-    subject: "Aanvraag website",
-    html: mail,
-  });
-  res.json({ status: 200 });
+  transporter
+    .sendMail({
+      from: "info@ella-est-la.be",
+      to: "info@ella-est-la.be",
+      subject: "Aanvraag website",
+      html: mail,
+    })
+    .then(() => res.json({ status: 200 }));
 };
