@@ -45,28 +45,28 @@ export default function Navbar() {
           } flex flex-col bg-secondary pt-4 space-y-3 text-center text-primary lg:flex lg:flex-row lg:items-center lg:space-y-0 lg:space-x-8 lg:pt-0`}
         >
           <div>
-            <Link href="/#qui">
+            <Link legacyBehavior href="/#qui">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
                 About me
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/#name">
+            <Link legacyBehavior href="/#name">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
                 What's in the name?
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/#concepten">
+            <Link legacyBehavior href="/#concepten">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
                 Concepten
               </a>
             </Link>
           </div>
           <div>
-            <Link href="/#contact">
+            <Link legacyBehavior href="/#contact">
               <a className="text-lg" onClick={() => setOpenMenu(false)}>
                 Contact
               </a>

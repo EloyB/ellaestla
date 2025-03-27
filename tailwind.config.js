@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./pages/**/*.js", "./components/**/*.js"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -8,7 +8,7 @@ module.exports = {
         secondary: "#FBE7D3",
       },
       fontFamily: {
-        poppins: "Poppins",
+        poppins: ["Poppins"],
       },
     },
   },
